@@ -1,0 +1,59 @@
+/* Responsive Design System */
+:root {
+  /* Breakpoints */
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  
+  /* Container Widths */
+  --container-sm: 100%;
+  --container-md: 90%;
+  --container-lg: 1110px;
+  --container-xl: 1320px;
+  
+  /* Responsive Spacing */
+  --section-padding-mobile: 3rem;
+  --section-padding-tablet: 4rem;
+  --section-padding-desktop: 6rem;
+  
+  /* Typography Scale */
+  --text-base-mobile: 16px;
+  --text-base-desktop: 18px;
+  --text-scale-ratio: 1.25;
+}
+
+/* Responsive Container */
+.container {
+  width: var(--container-sm);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: var(--container-md);
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    width: var(--container-lg);
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
+
+/* Responsive Grid System */
+.grid-responsive {
+  display: grid;
+  gap: var(--grid-gap, 2rem);
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(var(--grid-min-width, 280px), 1fr)
+  );
+}

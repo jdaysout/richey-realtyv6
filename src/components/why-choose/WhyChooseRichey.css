@@ -1,0 +1,25 @@
+/* WhyChooseRichey component spacing */
+.why-choose-section {
+  padding: var(--section-y-spacing) var(--section-x-spacing);
+}
+
+.section-header {
+  margin-bottom: var(--content-spacing);
+}
+
+.benefits-grid {
+  gap: var(--card-gap);
+  margin-bottom: var(--content-spacing);
+}
+
+.benefit-card {
+  padding: var(--card-padding);
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--stack-spacing);
+}
+
+/* Responsive adjustments handled by root spacing variables */

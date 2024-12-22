@@ -1,0 +1,51 @@
+/* Design System 2024 */
+:root {
+  /* Colors */
+  --color-black: #000000;
+  --color-white: #FFFFFF;
+  --color-accent: #E6B325;
+  --color-accent-dark: #C99A1E;
+  
+  /* Typography */
+  --font-heading: 'Montserrat', system-ui, sans-serif;
+  --font-body: 'Open Sans', system-ui, sans-serif;
+  
+  /* Spacing */
+  --section-spacing: 6rem;
+  --card-spacing: 2rem;
+  --stack-spacing: 1rem;
+  
+  /* Animation */
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --duration-normal: 300ms;
+  
+  /* Component Specific */
+  --btn-height: 3.5rem;
+  --btn-padding: 2rem;
+  --btn-radius: 0.75rem;
+  --card-radius: 1rem;
+}
+
+/* Typography Scale */
+.h1 {
+  font-family: var(--font-heading);
+  font-size: clamp(2.5rem, 5vw, 3.815rem);
+  line-height: 1.1;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.h2 {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 4vw, 2.441rem);
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.h3 {
+  font-family: var(--font-heading);
+  font-size: clamp(1.5rem, 3vw, 1.953rem);
+  line-height: 1.3;
+  font-weight: 600;
+}
